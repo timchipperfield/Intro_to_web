@@ -14,4 +14,5 @@ get '/cat' do
 		<BODY>
 			<img src='http://bit.ly/1eze8aE'>
 		</BODY>"
+
 end
