@@ -7,9 +7,15 @@ get '/' do
   "hi!"
 end
 
-get '/cat' do
+get '/random-cat' do
 	@name = ["amigo", "oscar", "hummus"].sample
-	erb(:index)  
+	erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  erb(:index)
 end
 
 
