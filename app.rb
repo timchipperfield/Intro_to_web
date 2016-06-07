@@ -8,5 +8,8 @@ get '/' do
 end
 
 get '/cat' do
+	@name = ["amigo", "oscar", "hummus"].sample
 	erb(:index)  
 end
+
+
